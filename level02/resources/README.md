@@ -25,11 +25,11 @@ Une fois que vous avez le fichier "Level02.pcap" sur votre système local, vous 
 
 
 Une fois que vous avez trouvé le paquet, sélectionnez-le, puis suivez le flux TCP pour voir le contenu texte du paquet.
-![image](./2.png)
+![image](./3.png)
 
 Vous trouverez le mot de passe recherché, qui est "ft_wandr...NDRel.L0L". Notez que vous devrez supprimer les points pour obtenir le mot de passe complet.
 
-![image](./3.png)
+![image](./2.png)
 
 Maintenant, pour obtenir le mot de passe complet, nous allons nettoyer le texte en supprimant tous les caractères '.' (points) se répétant sept fois. De plus, nous supprimerons les trois premiers points et les trois premiers caractères qui précèdent le premier point.
 
