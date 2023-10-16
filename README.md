@@ -2,13 +2,13 @@
 
 ## Contents
 
-- [Preamble]Preamble
-- [Introduction] Introduction
-- [Objectives] Objectives
-- [General] General instructions
-- [Mandatory] Mandatory part
-- [Bonus] Bonus part
-- [Submission] Submission and perr-evaluation
+- [Preamble](#Preamble)
+- [Introduction](#Introduction)
+- [Objectives](#Objectives)
+- [General](#General)
+- [Mandatory](#Mandatory)
+- [Bonus](#Bonus)
+- [Submission](#Submission)
 
 
 ## Preamble
