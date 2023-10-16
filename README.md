@@ -18,7 +18,7 @@
 - [x] level04
 - [x] level04
 - [x] level05
-- [ ] level06
+- [x] level06
 - [ ] level07
 - [ ] level08
 - [ ] level09
