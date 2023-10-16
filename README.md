@@ -13,11 +13,11 @@
 ## level Done!
 - [x] level00
 - [x] level01
-- [X] level02
-- [ ] level03
-- [ ] level04
-- [ ] level04
-- [ ] level05
+- [x] level02
+- [x] level03
+- [x] level04
+- [x] level04
+- [x] level05
 - [ ] level06
 - [ ] level07
 - [ ] level08
