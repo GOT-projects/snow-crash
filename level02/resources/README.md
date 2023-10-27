@@ -2,7 +2,15 @@
 
 Dans ce niveau, vous êtes confronté à un fichier appelé "Level02.pcap". Il s'agit d'un fichier PCAP, également connu sous le nom de fichier de capture de paquets, qui est couramment utilisé pour enregistrer des données de réseau. Les fichiers PCAP contiennent des enregistrements de paquets réseau, ce qui signifie qu'ils capturent et stockent le trafic réseau tel qu'il est transmis sur un réseau, y compris les données, les en-têtes de paquets, les adresses IP, les ports, etc.
 
-## Étape 1 : Récupération du fichier "Level02.pcap"
+## Solution 1
+
+```bash
+((tcpdump -A -r level02.pcap | grep -A3 '> 59.233.235.223.12121' | grep -A500 '07:23:34.363418' | grep -A3 'length 1' | grep -v -e 'IP') && echo --) | grep -B1 -e '--' | grep -v -e '--' | grep -o '.$' | tr -d '\n' | cat -e && echo
+```
+
+## Solution 2
+
+### Étape 1 : Récupération du fichier "Level02.pcap"
 Tout d'abord, vous devez récupérer le fichier "Level02.pcap" depuis la machine distante à l'aide de la commande ```scp```.
 ```bash
 scp -P 4242 level02@<ip>:level02.pcap
@@ -13,7 +21,7 @@ Assurez-vous que le fichier "Level02.pcap" est accessible en lecture avec la com
 chmod x+r ./level02.pcap
 ```
 
-## Étape 2 : Analyse du fichier PCAP avec Wireshark
+### Étape 2 : Analyse du fichier PCAP avec Wireshark
 Une fois que vous avez le fichier "Level02.pcap" sur votre système local, vous pouvez utiliser Wireshark pour l'analyser. Wireshark est un outil graphique qui vous permet d'examiner les données capturées dans un fichier PCAP. Voici comment procéder :
 
 - Ouvrez Wireshark et ouvrez le fichier "Level02.pcap" à partir de l'interface.
