@@ -29,6 +29,12 @@ cat /usr/sbin/john
 cdiiddwpgswtgt 
 ```
 
+Alternative :
+
+```bash
+find / -user flag00 -group flag00 2>/dev/null
+```
+
 ### Test du flag00
 Tentons de nous connecter en tant que "flag00" :
 ```bash
