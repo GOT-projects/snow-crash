@@ -41,3 +41,18 @@ while 1 do
   client:close()
 end
 ```
+
+```bash
+level11@SnowCrash:~$ ./level11.lua 
+lua: ./level11.lua:3: address already in use
+stack traceback:
+	[C]: in function 'assert'
+	./level11.lua:3: in main chunk
+	[C]: ?
+
+level11@SnowCrash:~$ nc -l 5151
+nc: Address already in use
+
+level11@SnowCrash:~$ nc localhost 5151
+Password: 
+```
