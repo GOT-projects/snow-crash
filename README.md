@@ -21,11 +21,11 @@
 - [x] [level07](./level07/resources)
 - [x] [level08](./level08/resources)
 - [x] [level09](./level09/resources)
-- [ ] [level10](./level10/resources)
-- [ ] [level11](./level11/resources)
-- [ ] [level12](./level12/resources)
-- [ ] [level13](./level13/resources)
-- [ ] [level14](./level14/resources)
+- [x] [level10](./level10/resources)
+- [x] [level11](./level11/resources)
+- [x] [level12](./level12/resources)
+- [x] [level13](./level13/resources)
+- [x] [level14](./level14/resources)
 
 ## Preamble
 
